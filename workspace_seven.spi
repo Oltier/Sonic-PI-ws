@@ -1,0 +1,12 @@
+# Welcome to Sonic Pi v3.1
+use_synth :prophet
+
+live_loop :flibble do
+  sample :bd_haus, rate: 1
+  sleep 0.5
+end
+
+live_loop :asd do
+  chord_and_bass [60,64,67], 0.1
+  sleep 0.15
+end

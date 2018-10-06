@@ -1,0 +1,42 @@
+use_synth :prophet
+
+2.times do
+  play 60, release: 2
+  play 64, release: 2
+  play 67, release: 2
+  sleep 1
+  play 67, release: 2
+  play 71, release: 2
+  play 74, release: 2
+  sleep 1
+  play 59, release: 2
+  play 62, release: 2
+  play 66, release: 2
+  sleep 1
+  play 60
+  play 64
+  play 67
+  sleep 2
+  play 60, release: 2
+  play 64, release: 2
+  play 67, release: 2
+  sleep 1
+  play 67, release: 2
+  play 71, release: 2
+  play 74, release: 2
+  sleep 1
+  play 69, release: 2
+  play 72, release: 2
+  play 76, release: 2
+  sleep 1
+  play 67, release: 2
+  play 71, release: 2
+  play 74, release: 2
+  sleep 3
+end
+
+
+
+
+
+

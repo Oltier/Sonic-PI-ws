@@ -1,0 +1,6 @@
+# Welcome to Sonic Pi v3.1
+
+4.times do
+  sample :drum_bass_hard
+  sleep 0.5
+end

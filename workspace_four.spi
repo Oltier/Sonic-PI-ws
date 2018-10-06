@@ -1,0 +1,32 @@
+# Welcome to Sonic Pi v3.1
+use_synth :prophet
+
+define :chord_and_bass do |chord, sleep_time|
+  play_chord chord
+  sample :drum_bass_hard
+  sleep sleep_time
+end
+
+
+4.times do
+  play_chord [60,64,67]
+  sleep 0.5
+  play_chord [67,71,74]
+  sleep 0.5
+  play_chord [59,62,66]
+  sleep 0.5
+  play_chord [60,64,67]
+  sleep 1
+end
+
+4.times do
+  sample :drum_bass_hard
+  sleep 0.5
+end
+
+
+
+
+
+
+

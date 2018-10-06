@@ -1,0 +1,54 @@
+# Welcome to Sonic Pi v3.1
+use_synth :prophet
+
+define :chord_and_bass do |chord, sleep_time|
+  play_chord chord
+  sleep sleep_time
+end
+
+define :intro_part_1 do
+  2.times do
+    chord_and_bass [60,64,67], 0.5
+    chord_and_bass [67,71,74], 0.5
+    chord_and_bass [59,62,66], 0.5
+    chord_and_bass [60,64,67], 1
+  end
+end
+
+define :intro_part_2 do
+  2.times do
+    sample :loop_weirdo
+    chord_and_bass [60,64,67], 0.5
+    chord_and_bass [67,71,74], 0.5
+    chord_and_bass [59,62,66], 0.5
+    chord_and_bass [60,64,67], 1
+  end
+end
+
+intro_part_1
+intro_part_2
+
+live_loop :flibble do
+  sample :bd_haus, rate: 1
+  sleep 0.5
+end
+
+live_loop :asd do
+  chord_and_bass [60,64,67], 0.1
+  sleep 0.15
+end
+
+2.times do
+  sample :loop_weirdo
+  sleep 0.5
+end
+
+
+
+
+
+
+
+
+
+

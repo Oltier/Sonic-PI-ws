@@ -1,0 +1,13 @@
+# Welcome to Sonic Pi v3.1
+
+  play 67, release: 2
+  play 71, release: 2
+  play 74, release: 2
+  sleep 1
+  play 69, release: 2
+  play 72, release: 2
+  play 76, release: 2
+  sleep 1
+  play 67, release: 2
+  play 71, release: 2
+  play 74, release: 2
